@@ -1,3 +1,12 @@
 h1 {
-    color: #0053ecec; /* Deep blue color */
+    color: #0053ecec; 
+}
+
+.resume-link {
+    display: inline-block;
+    background-color: #94b9c7; 
+    padding: 10px 20px;
+    border: 1px solid #000000; 
+    margin: 10px;
+    color: black; 
 }
