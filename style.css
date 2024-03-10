@@ -2,6 +2,21 @@ h1 {
     color: #0053ecec; 
 }
 
+p:first-child::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+  }
+
+p {
+    text-indent: 20px;
+  }
+
+p:first-child {
+    text-indent: 0;
+  }
+
+
+
 .resume-link {
     display: inline-block;
     background-color: #94b9c7; 
@@ -9,4 +24,8 @@ h1 {
     border: 1px solid #000000; 
     margin: 10px;
     color: black; 
+}
+
+.author {
+    text-transform: none;
 }
