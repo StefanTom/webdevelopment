@@ -2,7 +2,6 @@ nav > ul {
     display: flex; 
     list-style-type: none;
     margin: 0;
-    background-color: #8bc4ce; 
 }
 
 nav ul li {
@@ -10,11 +9,29 @@ nav ul li {
     padding: 10px;
     border: 1px solid #000;
 }
+nav li{
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
 
 nav a {
     display: block;
-    padding: 10px;
-    color: white;
+    padding: 5px 10px;
     text-decoration: none; 
 }
 
@@ -22,7 +39,6 @@ nav a {
     display: none;
     position: absolute;
     top: 100%;
-    background-color: #8bc4ce;
     min-width: 160px;
 }
 

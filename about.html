@@ -19,10 +19,10 @@ Tested: 3/9/2024
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page - Stefan's Career Portfolio</title>
-
-
     </head>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -39,27 +39,40 @@ Tested: 3/9/2024
             <li><a href="#contact.html">Contact</a></li>
         </ul>
     </nav>
+
     <header>
         <h1>Stefan Tomovski</h1>
     </header>
-    
-    <h2>About Me</h2>
+
+    <h2 class="headercenter">About Me</h2>
+
+    <div class="flex-container">
+        <div class="headshot">
+            <img src="ProfessionalHeadshot.PNG" alt="Stefan Tomovski">
+        
+    </div>
+
     <body>
-        <main><a href="STResume.pdf" class ="resume-link">Click Here to View my Resume</a></main>
-            <p>        My name is <strong>Stefan Tomovski</strong>, I am currently a senior in information technology. I am currently
-                attaining my <strong>Bachelor of Science in Information Technology at the University of Missouri</strong>. I am also
+            <p class="flex-container">My name is Stefan Tomovski, I am currently a senior in information technology. I am currently
+                attaining my Bachelor of Science in Information Technology at the University of Missouri. I am also
                 achieving my web development certificate along with my cybersecurity certificate and my digital media
                 design certificate. I needed work experience so in my sophomore year I picked up an IT
-                support/technician student job at the <em>University of Missouri’s School of Medicine</em>.  <br>The job and the
+                support/technician student job at the University of Missouri’s School of Medicine. The job and the
                 experience I have attained while working there have been enlightening in teaching me what the future
                 of information technology may hold. In high school I didn’t have much of an idea what I was going to do
                 for school, so I went into IT, and it turned out to be a perfect fit where I have passion. A goal I have to
                 complete by the end of this summer is to attain my CompTIA certification for networking and
                 cybersecurity. As Information Technology is a very broad field of study, my specific interest is
-                <em>cybersecurity</em>.
+                cybersecurity.
             </p>
-            <blockquote cite="https://blog.hubspot.com/sales/famous-quotes">Darkness cannot drive out darkness: only <em>light</em> can do that. 
-                Hate cannot drive out hate: only <em>love</em> can do that.
+        </div>
+        </body>
+        <div class="headercenter">
+            <a href="STResume.pdf" class ="resume-link">Click Here to View my Resume</a>
+        </div>
+
+            <blockquote cite="https://blog.hubspot.com/sales/famous-quotes">Darkness cannot drive out darkness: only light can do that. 
+                Hate cannot drive out hate: only love can do that.
                 <footer>-Martin Luther King Jr.<cite>Hubspot</cite></footer>
             </blockquote>
             
@@ -69,5 +82,4 @@ Tested: 3/9/2024
                 <div>&copy; 2024 Stefan Tomovski. All rights reserved.</div>
             </footer>
 
-    </body>
 </html>
