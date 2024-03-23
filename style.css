@@ -222,3 +222,22 @@ footer div {
     width: 60%;
   }
 }
+
+@media (max-width: 768px) {
+  nav {
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    /* Adjust height if necessary */
+  }
+
+  nav a {
+    padding: 0 10px; /* Less space between links */
+    /* Further adjust link styling if needed */
+  }
+
+  /* If using a logo or images in the nav bar, adjust their size as well */
+  .nav-logo {
+    height: 40px; /* Example smaller logo height */
+    width: auto; /* Maintain aspect ratio */
+  }
+}
