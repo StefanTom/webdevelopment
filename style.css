@@ -171,6 +171,17 @@ footer div {
   }
 }
 
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    text-align: center;
+  }
+}
 
 @media (min-width: 992px) { /* Desktop */
   .container {
