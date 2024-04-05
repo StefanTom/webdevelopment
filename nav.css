@@ -1,54 +1,96 @@
-nav > ul {
-    display: flex; 
-    list-style-type: none;
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #012E40; 
+    padding: 12px 20px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; 
 }
 
 nav ul li {
     position: relative;
-    padding: 10px;
-    border: 1px solid #000;
+    border: 2px solid #3A5F73; 
+    border-radius: 5px; 
 }
-nav li{
-    margin-bottom:10px;
-    margin-top:10px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.hamburger {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-}
-
-
 
 nav a {
     display: block;
-    padding: 5px 10px;
-    text-decoration: none; 
+    padding: 15px 20px;
+    color: #F2E3D5;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #3A5F73;
 }
 
 .dropdowncontent {
     display: none;
     position: absolute;
-    top: 100%;
+    background-color: #012E40;
     min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.dropdowncontent li a {
-    color: black; 
-    padding: 10px;
+.dropdowncontent a {
+    color: #F2E3D5;
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
+}
+
+.dropdowncontent a:hover {
+    background-color: #3A5F73;
 }
 
 .dropdown:hover .dropdowncontent {
     display: block;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul li {
+        text-align: center;
+        border: none;
+    }
+
+    .dropdowncontent {
+        position: relative;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
 }

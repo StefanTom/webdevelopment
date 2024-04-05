@@ -1,20 +1,95 @@
-p:first-child::first-letter {
-    font-size: 200%;
-    font-weight: bold;
+/* FONTS */
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Regular.ttf') format('truetype'); 
+
 }
+/* Media Print */
+
+@media print {
+  html{
+    margin: 1in;
+  }
+  body {
+      font-family: 'Lato', serif;
+      color: black; 
+      margin: 1in;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Merriweather'; 
+      color: black; 
+      margin: 1in;
+  }
+
+  header {
+    font-family: 'Merriweather';
+    color: black; 
+    margin: 1in;
+  }
+
+  .navbar,nav, nav a, nav, li,nav ul li, img,.headercenter {
+      display: none;
+      color: black; 
+  }
+
+
+
+
+  nav{
+    color: black; 
+
+  }
+
+  p {
+      color: black; 
+      margin: 1in;
+
+  }
+
+  ul, ol {
+      color: black; 
+
+
+  }
+
+  blockquote {
+      color: black; 
+      margin: 1in;
+  
+  }
+
+  footer {
+      color: black; 
+ 
+  }
+  }
+
+
+/* FONTS */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-Regular.ttf') format('truetype'); 
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header ,h1, h2,h3 {
+  font-family: 'Merriweather', sans-serif;
+}
+
+/* HEADER */
+
 header h1 {
-  font-size: 36px; /* Adjust font size as needed */
+  font-size: 36px; 
 }
 
 .headercenter {
   text-align: center;
   bottom: 0;
-}
-
-
-p {
-    text-indent: 20px;
-    padding: 20px;
 }
 
   h2 {
@@ -28,15 +103,43 @@ p {
   h3 {
     text-align: center;
 }
+
+/* PARAGRAPH */
+
 p:first-child {
     text-indent: 0;
 }
 
-img {
+p:first-child::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+p {
+  text-indent: 20px;
   padding: 20px;
-  width: 200px;
+}
+
+/* IMAGE */
+
+img {
+
+  width: 300px;
   height: auto;
 }
+
+.imgresize {
+  width: 30%;
+  height: auto;
+  margin-left: 50px;
+}
+
+img {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* RESUME */
+
 .resume-link {
     display: inline-block;
     background-color: #024959; 
@@ -53,14 +156,16 @@ img {
     text-transform: none;
 }
 
+/* MEDIA */
+
 @media (max-width: 768px) {
   .container {
       flex-direction: column;
-  
+  }
   header, .header {
       font-size: 18px; 
     }
-  }
+  
   img {
         max-width: 100%; 
         height: auto;
@@ -73,12 +178,7 @@ img {
   footer, .footer {
       font-size: 14px;
     }
-  #left-column{
-      width:100%;
-    }
-  #right-column{
-    width:100%;
-  }
+
 }
 
 @media (max-width: 320px) {
@@ -90,37 +190,20 @@ img {
   display: flex;
   align-items: center;
 }
-.flex-container img, .flex-container p {
+.flex-container img{
   margin: 10px;
-  text-align:center;
+  width: 30%;
+  height: auto;
+  margin-left: 50px;
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #F2E3D5;
   color: #012E40;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #024959; 
-}
-
-nav a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #F2E3D5;
-  transition: background-color 0.3s ease; 
-}
-
-nav a:hover {
-  background-color: #3CA6A6;
-}
 
 header h1, main h2 {
   color: #024959; 
@@ -145,24 +228,6 @@ html, body {
   overflow: auto;
 }
 
-footer {
-  width: 100%;
-  background-color: #012E40; 
-  text-align: center;
-  padding: 20px 0;
-  color: #F2E3D5;
-  position: fixed;
-  bottom: 0;
-  align-items: center;
-  display:flex;
-  justify-content: space-between;
-  
-}
-
-footer div {
-  margin: 5px 0;
-  padding: 10px;
-}
 
 @media (min-width: 768px) { /* Tablet */
   .container {
@@ -171,30 +236,9 @@ footer div {
   }
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li {
-    margin-right: 0;
-    text-align: center;
-  }
-}
-
-@media (min-width: 992px) { /* Desktop */
-  .container {
-    width: 80%;
-  }
-
-  nav ul li {
-    margin-right: 30px;
-  }
-}
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 390px) {
   body {
     font-size: 14px;
   }
@@ -214,7 +258,7 @@ footer div {
 }
 
 /* Desktop */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body {
     font-size: 18px;
   }
@@ -223,20 +267,24 @@ footer div {
   }
 }
 
-@media (max-width: 768px) {
-  nav {
-    padding: 5px 10px;
-    font-size: 14px;
 
-  }
+/* FOOTER */
 
-  nav a {
-    padding: 0 10px; 
+footer {
+  width: 100%;
+  background-color: #012E40; 
+  text-align: center;
+  padding: 20px 0;
+  color: #F2E3D5;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  display:flex;
+  justify-content: space-between;
   
-  }
+}
 
-  .nav-logo {
-    height: 40px;
-    width: auto; 
-  }
+footer div {
+  margin: 5px 0;
+  padding: 10px;
 }
