@@ -23,7 +23,7 @@
     color: black; 
     margin: 1in;
   }
-  .navbar,nav, nav a, nav, li,nav ul li, img,.headercenter {
+  .navbar,nav, nav a, nav, li,nav ul li, img,.headercenter, video,source {
       display: none;
       color: black; 
   }
