@@ -18,6 +18,7 @@ Tested: 3/9/2024
 -->
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.png" type="image/png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Page - Stefan's Career Portfolio</title>
@@ -41,15 +42,17 @@ Tested: 3/9/2024
         </ul>
     </nav>
 
-        <h1>Stefan Tomovski</h1>
+    <h1>Stefan Tomovski</h1>
+
 
     <body>
-    <h2 class="headercenter">About Me</h2>
+        <div class="content-wrap">
+        <h2 class="headercenter">About Me</h2>
 
-    <div class="flex-container">
+        <div class="flex-container">
         <div class="headshot">
-            <img src="ProfessionalHeadshot.PNG" alt="Stefan Tomovski">
-    </div>
+            <img class="imgshadow" src="ProfessionalHeadshot.PNG" alt="Stefan Tomovski">
+        </div>
 
 
             <p class="flex-container">My name is Stefan Tomovski, I am currently a senior in information technology. I am currently
@@ -65,20 +68,27 @@ Tested: 3/9/2024
                 cybersecurity.
             </p>
         </div>
-        </body>
+    
         <div class="headercenter">
             <a href="STResume.pdf" class ="resume-link">Click Here to View my Resume</a>
         </div>
 
             <blockquote cite="https://blog.hubspot.com/sales/famous-quotes">Darkness cannot drive out darkness: only light can do that. 
                 Hate cannot drive out hate: only love can do that.
-                <footer>-Martin Luther King Jr.<cite>Hubspot</cite></footer>
+                -Martin Luther King Jr.<cite>Hubspot</cite>
             </blockquote>
-            
-            <footer>
+        </body>
+        </div>
+        <footer>
+            <div class="footer-left">&copy; 2024 Stefan Tomovski. All rights reserved.</div>
+            <div class="footer-contact">
                 <div>Author: Stefan Tomovski</div>
-                <div>Email: tomovskis@missouri.edu</div>
-                <div>&copy; 2024 Stefan Tomovski. All rights reserved.</div>
-            </footer>
+                <img src="email-icon.png" alt="Email Icon" style="width:20px; height:auto;">
+                <a href="mailto:tomovski@missouri.edu"> tomovski@missouri.edu</a>
+                <img src="phone-icon.png" alt="Phone Icon" style="width:20px; height:auto;">
+                <span> 1+888-888-8888</span> 
+            </div>
+        </footer>
+
 
 </html>

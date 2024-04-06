@@ -2,10 +2,8 @@
 @font-face {
   font-family: 'Lato';
   src: url('Lato-Regular.ttf') format('truetype'); 
-
 }
 /* Media Print */
-
 @media print {
   html{
     margin: 1in;
@@ -15,131 +13,97 @@
       color: black; 
       margin: 1in;
   }
-
   h1, h2, h3, h4, h5, h6 {
       font-family: 'Merriweather'; 
       color: black; 
       margin: 1in;
   }
-
   header {
     font-family: 'Merriweather';
     color: black; 
     margin: 1in;
   }
-
   .navbar,nav, nav a, nav, li,nav ul li, img,.headercenter {
       display: none;
       color: black; 
   }
-
-
-
-
   nav{
     color: black; 
-
   }
-
   p {
       color: black; 
       margin: 1in;
-
   }
-
   ul, ol {
       color: black; 
-
-
   }
-
   blockquote {
       color: black; 
       margin: 1in;
-  
   }
-
   footer {
       color: black; 
- 
   }
   }
-
 
 /* FONTS */
 @font-face {
   font-family: 'Merriweather';
   src: url('Merriweather-Regular.ttf') format('truetype'); 
-
 }
-
 body {
   font-family: 'Lato', sans-serif;
 }
-
 header ,h1, h2,h3 {
   font-family: 'Merriweather', sans-serif;
 }
 
 /* HEADER */
-
 header h1 {
   font-size: 36px; 
 }
-
 .headercenter {
   text-align: center;
   bottom: 0;
 }
-
   h2 {
     padding: 10px;
 }
-
   h1 {
     padding: 10px;
 }
-
   h3 {
     text-align: center;
 }
 
 /* PARAGRAPH */
-
 p:first-child {
     text-indent: 0;
 }
-
 p:first-child::first-letter {
   font-size: 200%;
   font-weight: bold;
 }
-
 p {
   text-indent: 20px;
   padding: 20px;
 }
 
 /* IMAGE */
-
 img {
-
   width: 300px;
   height: auto;
 }
-
 .imgresize {
   width: 30%;
   height: auto;
   margin-left: 50px;
 }
-
-img {
+.imgshadow {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* RESUME */
-
 .resume-link {
     display: inline-block;
     background-color: #024959; 
@@ -165,20 +129,16 @@ img {
   header, .header {
       font-size: 18px; 
     }
-  
   img {
         max-width: 100%; 
         height: auto;
     }
-
   p, blockquote, ul, ol {
       padding: 0 10px; 
     }
-
   footer, .footer {
       font-size: 14px;
     }
-
 }
 
 @media (max-width: 320px) {
@@ -196,20 +156,19 @@ img {
   height: auto;
   margin-left: 50px;
 }
-
 body {
   margin: 0;
   padding: 0;
   background-color: #F2E3D5;
   color: #012E40;
 }
-
-
+a, a:link, a:visited, a:hover, a:active {
+  color: #F2E3D5; 
+  text-decoration: none; 
+}
 header h1, main h2 {
   color: #024959; 
 }
-
-
 main {
   width: 100%; 
   margin-left: auto;
@@ -218,7 +177,6 @@ main {
 .main-content {
   padding-bottom: 100px;
 }
-
 html, body {
   height: 100%;
   margin: 0;
@@ -227,15 +185,12 @@ html, body {
   bottom: 0;
   overflow: auto;
 }
-
-
 @media (min-width: 768px) { /* Tablet */
   .container {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-
 
 /* Mobile */
 @media (max-width: 390px) {
@@ -256,7 +211,6 @@ html, body {
     width: 80%;
   }
 }
-
 /* Desktop */
 @media (min-width: 768px) {
   body {
@@ -267,24 +221,42 @@ html, body {
   }
 }
 
-
-/* FOOTER */
-
-footer {
-  width: 100%;
-  background-color: #012E40; 
-  text-align: center;
-  padding: 20px 0;
-  color: #F2E3D5;
-  position: fixed;
-  bottom: 0;
-  align-items: center;
-  display:flex;
-  justify-content: space-between;
-  
+/* General Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-footer div {
-  margin: 5px 0;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: space-between; /* Adjust alignment for three sections */
+  align-items: center;
   padding: 10px;
+  background-color: #012E40;
+  color: #F2E3D5; 
+  font-size: 0.9rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.footer-left, .footer-center, .footer-contact {
+  flex: 1; /* Allows equal space distribution, can adjust as needed */
+  display: flex;
+  justify-content: center; /* Center content, adjust as needed */
+  align-items: center;
+}
+
+.footer-contact div {
+  margin: 0 10px; /* Adds horizontal spacing between contact info items */
 }
