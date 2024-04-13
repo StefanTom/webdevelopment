@@ -299,9 +299,11 @@ footer {
 .contact-info {
   font-family: Arial, sans-serif; 
   line-height: 1.6; 
-  color: #333; 
-  background-color: #F2E3D5; 
-  padding: 15px;
+  color: #3A5F73; 
+  background-color: #012E40; 
+  padding-left: 75px;
+  padding-right: 50px;
+  padding-top: 30px;
   border-radius: 8px; 
   width: auto; 
   max-width: 400px; 
@@ -310,7 +312,7 @@ footer {
 }
 
 .contact-info a {
-  color: #024959; 
+  color: #F2E3D5; 
   text-decoration: none; 
 }
 
@@ -324,6 +326,7 @@ footer {
   margin-top: 10vh;
 
 }
+/*FORM*/
 .form-row {
   display: flex;
   margin-bottom: 20px;
@@ -355,6 +358,8 @@ button {
   cursor: pointer;
   display: block; /* Make the button a block element */
   margin: 0 auto; /* Auto margin on both sides centers the button */
+  color: #F2E3D5; 
+  background-color: #012E40; 
 }
 
 .projects-container {
