@@ -64,6 +64,28 @@ Tested: 4/3/2024
             <a href="STResume.pdf" class ="resume-link">Click Here to View my Resume</a>
         </div>
 
+        <div class="form-container">
+            <form action="/submit-your-form-handler" method="POST">
+                <div class="form-row">
+                    <label for="name">
+                        Name:
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                    <label for="email">
+                        Email:
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="message">
+                        Message:
+                        <textarea id="message" name="message" required></textarea>
+                    </label>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
         <footer>
             <div class="footer-left">&copy; 2024 Stefan Tomovski. All rights reserved.</div>
             <div class="footer-contact">
