@@ -112,6 +112,12 @@ video {
   margin-left:5vh;
   margin-right:5vh;
 }
+blockquote {
+  justify-content: center;
+  text-align:center;
+  margin-top: 10vh;
+}
+
 /* IMAGE */
 img {
   width: 300px;
@@ -262,18 +268,17 @@ body {
 /* Footer Styles */
 footer {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   background-color: #012E40;
-  color: #F2E3D5; 
+  color: #F2E3D5;
   font-size: 0.9rem;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 60px;
-
 }
 
 .footer-left, .footer-center, .footer-contact {
@@ -281,13 +286,29 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 
-.footer-contact div {
-  margin: 0 10px;
+.footer-left {
+  justify-content: flex-start;
 }
+
+.footer-center {
+  justify-content: center;
+}
+
+.footer-contact {
+  justify-content: flex-end;
+}
+
+.footer-contact div, .footer-contact a, .footer-contact span {
+  margin: 0 10px; /* Consistent spacing between contact items */
+}
+
 .footer-contact img {
   transition: transform 0.3s ease;
+  margin-right:2px;
 }
 
 .footer-contact img:hover {
