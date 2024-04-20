@@ -72,25 +72,26 @@ nav a:hover,
 }
 
 @media screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
+    nav {
+        padding: 0.5rem 1rem;  /* Reduce padding */
     }
 
-    nav ul {
-        flex-direction: column;
-        display: none;
+    nav a {
+        font-size: 14px;  /* Reduce font size */
     }
 
     nav ul li {
-        text-align: center;
-        border: none;
+        margin: 0 5px;  /* Reduce margin between links */
     }
 
-    .dropdowncontent {
-        position: relative;
+    .hamburger {
+        display: block;
+        cursor: pointer;
     }
 
     nav.active ul {
         display: flex;
+        flex-direction: column;  /* Stack the links if displayed */
+        width: 100%;  /* Full width for easier touch */
     }
 }
