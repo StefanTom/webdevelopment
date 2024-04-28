@@ -73,15 +73,15 @@ nav a:hover,
 
 @media screen and (max-width: 768px) {
     nav {
-        padding: 0.5rem 1rem;  /* Reduce padding */
+        padding: 0.5rem 1rem; 
     }
 
     nav a {
-        font-size: 14px;  /* Reduce font size */
+        font-size: 14px; 
     }
 
     nav ul li {
-        margin: 0 5px;  /* Reduce margin between links */
+        margin: 0 1px; 
     }
 
     .hamburger {
@@ -91,7 +91,7 @@ nav a:hover,
 
     nav.active ul {
         display: flex;
-        flex-direction: column;  /* Stack the links if displayed */
-        width: 100%;  /* Full width for easier touch */
+        flex-direction: column; 
+        width: 100%;  
     }
 }

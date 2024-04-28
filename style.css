@@ -290,7 +290,7 @@ html {
   footer {
     flex-direction: column; 
     text-align: center; 
-    font-size: 12;
+    font-size: 12px;
     width: 100%; 
     height: auto;
   }
