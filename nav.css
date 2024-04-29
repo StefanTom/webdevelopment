@@ -29,7 +29,7 @@ nav ul li {
 
 nav a {
     display: block;
-    padding: 15px 20px;
+    padding: 10px 12px;
     color: #F2E3D5;
     text-decoration: none;
     transition: background 0.3s ease;
@@ -73,11 +73,11 @@ nav a:hover,
 
 @media screen and (max-width: 768px) {
     nav {
-        padding: 0.5rem 1rem; 
+        padding: 0.5rem .5rem; 
     }
 
     nav a {
-        font-size: 14px; 
+        font-size: 10px; 
     }
 
     nav ul li {
