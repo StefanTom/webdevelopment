@@ -264,23 +264,16 @@ button {
   overflow: hidden; 
 }
 
-.table-container {
-  overflow-x: auto;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.table-container {
-  overflow: auto;
-  position: relative; 
-  padding: 20px;
-}
+
 table {
-  width: 100%;
+  /* Removed width */
+  /* Added min-width: 100%; */
+  min-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   font-family: 'Lato', sans-serif;
   color: #333;
-  margin-bottom: 10vh;
+
 }
 
 th, td {
