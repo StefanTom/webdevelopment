@@ -148,7 +148,6 @@ footer {
   width: 100%;
   height: 60px;
   flex-shrink: 0;
-  margin-bottom: 10vh;
 }
 .footer-left, .footer-center, .footer-contact {
   flex: 1;
@@ -319,6 +318,13 @@ figcaption {
 
 html {
   scroll-behavior: smooth;
+}
+
+.visitor-counter {
+  font-size: 12px;  /* Adjust the font size */
+  width: 5vh;     /* Set a specific width */
+  height: auto;     /* Adjust height if necessary */
+  padding: 5px;     /* Adjust padding for spacing */
 }
 
 /* Mobile */
